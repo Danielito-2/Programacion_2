@@ -165,3 +165,110 @@ git merge upstream/main
 -   `git log --oneline --graph --decorate`: historial resumido.\
 -   `git diff`: diferencias entre commits o archivos.\
 -   `git show <commit>`: detalles de un commit específico.
+
+
+# Programación 
+
+## 15. Tipos de datos primitivos  
+
+En Java existen varios tipos básicos de datos:  
+
+- **boolean** → valores lógicos `true` o `false`.  
+- **char** → un carácter Unicode (16 bits).  
+- **byte** → entero pequeño (8 bits).  
+- **short** → entero corto (16 bits).  
+- **int** → entero común (32 bits).  
+- **long** → entero largo (64 bits).  
+- **float** → número decimal de precisión simple (32 bits).  
+- **double** → número decimal de doble precisión (64 bits).  
+- **void** → indica que un método no retorna valor.  
+
+---
+
+## 16. Estructuras de control de flujo  
+
+- **if / else / else if** → ejecutan código según condiciones.  
+- **switch** → selecciona entre varios casos posibles.  
+- **while** → repite mientras la condición sea verdadera.  
+- **do-while** → igual al while, pero se ejecuta al menos una vez.  
+- **for** → repite un bloque un número de veces conocido.  
+- **for-each** → recorre directamente arreglos o colecciones.  
+
+---
+
+## 17. Importancia de los nombres significativos  
+
+Usar nombres claros en variables y métodos:  
+
+- Hace el código **más legible**.  
+- **Reduce errores** al programar.  
+- **Facilita el trabajo en equipo**.  
+- Funciona como **documentación automática**.  
+- Mejora el **mantenimiento** del proyecto.  
+
+---
+
+## 18. Programación Orientada a Objetos (POO)  
+
+La POO organiza el software en torno a **objetos** que combinan:  
+
+- **Atributos** → datos o propiedades.  
+- **Métodos** → comportamientos o acciones.  
+
+Su meta es representar el mundo real y mejorar la **modularidad**, la **reutilización** y la **facilidad de mantenimiento**.  
+
+---
+
+## 19. Los cuatro pilares de la POO  
+
+1. **Encapsulación** → protege los datos controlando el acceso.  
+2. **Herencia** → permite crear clases basadas en otras.  
+3. **Polimorfismo** → un mismo método puede tener distintos comportamientos.  
+4. **Abstracción** → oculta detalles internos y muestra solo lo esencial.  
+
+---
+
+## 20. Herencia en Java  
+
+La **herencia** permite que una clase (hija) herede atributos y métodos de otra (padre).  
+
+Ejemplo:  
+
+```java
+class Vehiculo {
+   void mover() { System.out.println("Moviendo..."); }
+}
+
+class Carro extends Vehiculo {
+   void tocarBocina() { System.out.println("Beep!"); }
+}
+```  
+
+Aquí, `Carro` hereda de `Vehiculo` y además añade su propio método.  
+
+---
+
+## 21. Modificadores de acceso  
+
+- **public** → accesible desde cualquier lugar.  
+- **private** → solo dentro de la misma clase.  
+- **protected** → accesible en el mismo paquete y en subclases.  
+- **default** (sin palabra clave) → accesible solo dentro del paquete.  
+
+---
+
+## 22. Variables de entorno  
+
+Son valores definidos en el sistema que afectan la ejecución de programas.  
+
+Ejemplos en Java:  
+
+- `JAVA_HOME` → ubicación de la JDK.  
+- `PATH` → permite ejecutar `java` y `javac` desde la terminal.  
+
+**Importancia:**  
+
+- Simplifican la **configuración**.  
+- Mejoran la **portabilidad**.  
+- Mantienen la **seguridad**.  
+- Separan configuración del **código fuente**.  
